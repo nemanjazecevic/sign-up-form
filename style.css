@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    background: url(./images/bg-intro-desktop.png);
+    background-color: #FF7979;;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wrapper{
+    display: flex;
+    max-width: 1800px;
+    width: 80%;
+    align-items: center;
+}
+.text{
+    width: 50%;
+    padding-right: 50px;
+}
+.text h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+    color: #FFFFFF;
+}
+.text p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.form-and-button{
+    width: 50%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    padding: 40px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+}
+.form input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+}
+.form input::placeholder{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3D3B48;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+.form input:active{
+    border: 1px solid #5E54A4;
+}
+.try-it-btn{
+    width: 100%;
+    margin-bottom: 24px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: auto;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.267857px;
+    color: #FFFFFF;
+    opacity: 0.8;
+
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    border: none;
+}
+.try-it-btn span{
+    font-weight: bold;
+}
+
+.try-it-btn:hover{
+    cursor: pointer;
+}
+
+.claim-free-trial-btn{
+    background: #38CC8B;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+
+    border: none;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.claim-free-trial-btn:hover{
+    background: #77E2B3;
+    cursor: pointer;
+}
+.terms{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 26px;
+    text-align: center;
+    color: #BAB7D4;
+}
+.terms a{
+    color: #FF7979;
+    text-decoration: none;
+}
+label{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    color: #FF7979;
+    display: none;
+}
+.input-label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.wrong .label{
+    display: block;
+}
+.wrong input{
+    background-image: url(./images/icon-error.svg);
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    border: 1px solid #FF7979;
+    
+    
+}
+.wrong input::placeholder{
+    opacity: 0;
+}
+.wrong .email{
+    color: #FF7979;
+}
+@media screen and (max-width: 768px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    .wrapper{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-top: 50px;
+        margin-bottom: 68px
+    }
+    .text{
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .form-and-button{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .text h1{
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.291667px;
+        color: #FFFFFF;
+    }
+    .form{
+        padding: 24px;
+    }
+    .try-it-btn{
+        padding: 17px 55px;
+    }
+}
